@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: rgb(217, 251, 252);
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/* logo and image */
+#logo{
+    margin: 13px 14px;
+}
+#logo img{
+    height: 69px;
+    margin: 0px 5px;
+    border-radius: 26px;
+    transition: all 0.2s ;
+}
+#logo img:hover{
+    transform: rotate(360deg);
+}
+/* Navigation bar list styling  */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.3rem;
+   
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 24px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 602px;
+    align-items: center;
+    padding: 3px 200px;
+}
+#home::before{
+    content: "";
+    background: url('../img/howcuttingdo.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 702px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+   color: #1d1313;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+/* services */
+#services{
+   margin: 34px;
+   display: flex;
+}
+#services .box{
+    border: 2px solid #843838;
+    padding: 36px;
+    border-radius: 23px;
+    margin: 23px;
+    background-color: rgb(240, 210, 240);
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    border-radius: 35px;
+}
+#services .box p{
+    font-family: 'Lato', sans-serif;
+    
+}
+/* clients section */
+#clients-section{
+    
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url("../bck.jpg");
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clients-section{
+    z-index: -5;
+}
+#clients img{
+    height: 128px;
+    margin: 2px 30px;
+}
+#clients-item{
+    padding: 34px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact {
+    z-index: -2;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 5px;
+   font-size: 1.1rem;
+}
+#contact-box form{
+    width: 45%;
+}
+#contact-box label{
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* footer */
+footer{
+    background-color: rgb(46, 45, 45);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social .snlogo img{
+    height: 80px;
+    width: 80px;
+    
+    margin: 5px 25px;
+}
+#insta{
+    height: 70px;
+    width: 70px;
+    border-radius: 44px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Lato', sans-serif;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Lato', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin:22px 17px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid brown;
+}
+.center{
+    text-align: center;
+}
+#form-btn button{
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    width: 102.5%;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(207, 202, 202);
+}
+html{
+    scroll-behavior: smooth;
+}
